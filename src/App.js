@@ -1,10 +1,21 @@
 import React from 'react';
-import { Button } from 'antd';
 import './App.css';
+import { Layout } from 'antd';
+
+const { Header, Footer, Sider, Content } = Layout;
 
 const App = () => (
   <div className="App">
-    <Button type="primary">Button</Button>
+    <Layout>
+    <Header>Header</Header>
+      <Layout>
+        <Sider>Sider</Sider>
+        <Layout>
+          <Content>Content</Content>
+          <Footer>Footer</Footer>
+        </Layout>
+      </Layout>
+    </Layout>
   </div>
 );
 
