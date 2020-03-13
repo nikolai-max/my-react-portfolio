@@ -1,0 +1,22 @@
+.button-blue {
+  display: inline-block;
+  background-color: #192965;
+  color: white;
+  border-radius: 4px;
+  padding: 6px 16px;
+  text-decoration: none;
+  font-weight: 800;
+  margin: 18px;
+}
+
+.list-inline {
+  list-style: none;
+  color: #192965;
+  padding-left: 0;
+}
+
+.list-inline li {
+  display: inline;
+  margin: 16px;
+  font-size: 20px;
+}
