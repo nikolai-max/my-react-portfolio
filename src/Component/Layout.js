@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import './layout.css';
 import profile from '../images/profile.jpg';
@@ -76,11 +75,11 @@ class LayoutFrame extends React.Component {
             <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
               <Route exact path="/" component={About}/>
               <Route path="/contact" component={Contact}/>
-              <Route path="/projects" component={Projects}/>
+              <Route exact path="/projects" component={Projects}/>
               <Route path="/projects/pantforward" component={Pantforward}/>
             </div>
           </Content>
-          <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+          <Footer style={{ textAlign: 'center' }}>©2020 Created by Nikolai Toverud</Footer>
         </Layout>
       </Layout>
       </HashRouter>

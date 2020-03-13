@@ -4,8 +4,9 @@ class Projects extends Component {
   render() {
     return (
       <div>
-        <h2>This is my projects</h2>
-        <p>Still a fearly new guy when it comes to frontend.</p>
+        <h2>Thank you for checking out my projects</h2>
+        <p>Have to mention that this page is also part of my projects.</p>
+          <p>Made on React with love</p>
       </div>
     );
   }

@@ -9,25 +9,25 @@ class Contact extends Component {
   render() {
     return (
       <div>
-        <h2>Get in tutch</h2>
-        <p>The easiest thing to do is to send me an pm on my LinkedIn account.
+        <h2>Get in touch</h2>
+        <p>The easiest way is to send me an personal message on my LinkedIn account.
         You´ll find the link by clicking the LinkedIn icon below.
         </p>
         <div class="card-white">
           <h2>Follow me</h2>
           <ul class="list-inline">
             <li>
-              <a href="https://www.linkedin.com/in/nikolaitoverud/" target="_blank">
+              <a href="https://www.linkedin.com/in/nikolaitoverud/" rel='noreferrer noopener' target="_blank">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </li>
             <li>
-              <a href="https://github.com/nikolai-max" target="_blank">
+              <a href="https://github.com/nikolai-max" rel='noreferrer noopener' target="_blank">
                 <FontAwesomeIcon icon={faGithub} />
               </a>
             </li>
             <li>
-              <a href="http://visdomspodden.libsyn.com/" target="_blank">
+              <a href="http://visdomspodden.libsyn.com/" rel='noreferrer noopener' target="_blank">
                 <FontAwesomeIcon icon={faPodcast} />
               </a>
             </li>
