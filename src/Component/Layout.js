@@ -1,19 +1,14 @@
 import React from 'react';
-import 'antd/dist/antd.css';
 import './layout.css';
 import profile from '../images/profile.jpg';
-
-import {
-  Route,
-  NavLink,
-  HashRouter
-} from "react-router-dom";
 import About from "./About";
 import Contact from "./Contact";
 import Projects from "./Projects";
 import Pantforward from "./projectfolder/Pantforward";
+import Getatractor from "./projectfolder/Getatractor";
+import Visdomspodden from "./projectfolder/Visdomspodden";
 
-
+import 'antd/dist/antd.css';
 import { Layout, Menu, Breadcrumb } from 'antd';
 import {
   FireOutlined,
@@ -21,6 +16,11 @@ import {
   UserOutlined,
 } from '@ant-design/icons';
 import { Avatar } from 'antd';
+import {
+  Route,
+  NavLink,
+  HashRouter
+} from "react-router-dom";
 
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
@@ -77,6 +77,8 @@ class LayoutFrame extends React.Component {
               <Route path="/contact" component={Contact}/>
               <Route exact path="/projects" component={Projects}/>
               <Route path="/projects/pantforward" component={Pantforward}/>
+              <Route path="/projects/getatractor" component={Getatractor}/>
+              <Route path="/projects/visdomspodden" component={Visdomspodden}/>
             </div>
           </Content>
           <Footer style={{ textAlign: 'center' }}>©2020 Created by Nikolai Toverud</Footer>

@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import pantforward from '../../images/pantforward.png';
-import pantlogo from '../../images/pantlogo.png';
+import getatractor from '../../images/getatractor.png';
+import tractorlogo from '../../images/tractorlogo.png';
 import Pantforwardmob from '../../images/Pantforwardmob.mp4';
 
 import './projects.css'
 import { Modal } from 'antd';
 import ReactPlayer from 'react-player'
 
-class Pantforward extends Component {
+class Getatractor extends Component {
   state = { visible: false };
 
   showModal = () => {
@@ -33,13 +33,13 @@ class Pantforward extends Component {
     return (
       <div>
         <div>
-          <img src={pantlogo} className="logo-adjustments" alt="Get a tractor logo" />
-          <h2>THIS IS PANT FORWARD BABY</h2>
-          <p>Pant Forward was part of my 10 days Le Wagon final project together with my partner, Dennis Neely.</p>
-          <p>The application is made for making it easier to recycle bottles in Norway.</p>
+          <img src={tractorlogo} className="logo-adjustments" alt="Get a tractor logo" />
+          <h2>Get a tractor - just get it!</h2>
+          <p>Get a tractor was part of my 5 days 'markedplace' week in the Le Wagon code bootcamp. The ass is made with love together with my partner, Dennis Neely.</p>
+          <p>Norway is full of unused tractors, and Get a tractor get them used by being the worlds first markedplace for swapping tractors.</p>
 
           <p>Click on the mobile to open a video of the app.</p>
-          <img src={pantforward} className="container-image" onClick={this.showModal} alt="A mobile with the 'pantforward' application interface" />
+          <img src={getatractor} className="container-image" onClick={this.showModal} alt="A mobile with the 'Get a tractor' application interface" />
         </div>
 
         <div>
@@ -64,4 +64,4 @@ class Pantforward extends Component {
   }
 }
 
-export default Pantforward;
+export default Getatractor;
