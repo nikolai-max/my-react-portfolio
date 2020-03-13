@@ -1,20 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
-import './../index.css';
+import './layout.css';
+import profile from '../images/profile.jpg';
+
 import { Layout, Menu, Breadcrumb } from 'antd';
 import {
-  DesktopOutlined,
-  PieChartOutlined,
-  FileOutlined,
-  TeamOutlined,
+  FireOutlined,
+  PhoneOutlined,
   UserOutlined,
 } from '@ant-design/icons';
+import { Avatar } from 'antd';
 
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 
-class SiderDemo extends React.Component {
+class LayoutFrame extends React.Component {
   state = {
     collapsed: false,
   };
@@ -28,44 +29,29 @@ class SiderDemo extends React.Component {
     return (
       <Layout style={{ minHeight: '100vh' }}>
         <Sider collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}>
-          <div className="logo" />
+          <Avatar size="large" className="logo" src={profile} />
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
             <Menu.Item key="1">
-              <PieChartOutlined />
-              <span>Option 1</span>
+              <UserOutlined />
+              <span>About</span>
             </Menu.Item>
-            <Menu.Item key="2">
-              <DesktopOutlined />
-              <span>Option 2</span>
+            <Menu.Item key="9">
+              <PhoneOutlined />
+              <span>Contact</span>
             </Menu.Item>
             <SubMenu
               key="sub1"
               title={
                 <span>
-                  <UserOutlined />
-                  <span>User</span>
+                  <FireOutlined />
+                  <span>Projects</span>
                 </span>
               }
             >
-              <Menu.Item key="3">Tom</Menu.Item>
-              <Menu.Item key="4">Bill</Menu.Item>
-              <Menu.Item key="5">Alex</Menu.Item>
+              <Menu.Item key="3">Pant Forward</Menu.Item>
+              <Menu.Item key="4">Get a tractor</Menu.Item>
+              <Menu.Item key="5">This site</Menu.Item>
             </SubMenu>
-            <SubMenu
-              key="sub2"
-              title={
-                <span>
-                  <TeamOutlined />
-                  <span>Team</span>
-                </span>
-              }
-            >
-              <Menu.Item key="6">Team 1</Menu.Item>
-              <Menu.Item key="8">Team 2</Menu.Item>
-            </SubMenu>
-            <Menu.Item key="9">
-              <FileOutlined />
-            </Menu.Item>
           </Menu>
         </Sider>
         <Layout className="site-layout">
@@ -86,6 +72,6 @@ class SiderDemo extends React.Component {
   }
 }
 
-ReactDOM.render(<SiderDemo />, document.getElementById('container'));
+ReactDOM.render(<LayoutFrame />, document.getElementById('container'));
 
-export default SiderDemo;
+export default LayoutFrame;
