@@ -4,7 +4,7 @@ import LayoutFrame from './Component/Layout'
 
 const App = () => (
   <div className="App">
-    <LayoutFrame></LayoutFrame>
+    <LayoutFrame />
   </div>
 );
 
