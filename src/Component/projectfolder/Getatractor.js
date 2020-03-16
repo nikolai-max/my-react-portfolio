@@ -47,11 +47,8 @@ class Getatractor extends Component {
           <p>Norway is full of unused tractors, and Get a tractor get them used by being the worlds first markedplace for swapping tractors.
           Through the app, you can hire out our tractor, or you can instantly hire a tractor.</p>
           <img src={tractorlogo} className="logo-adjustments" alt="Get a tractor logo" />
-          <Button type="link" block href="https://github.com/portlandnorway/PantForward" target="_blank" >
+          <Button type="link" block href="https://github.com/portlandnorway/airtractor" target="_blank" >
             <FontAwesomeIcon icon={faGithub} />&nbsp;GitHub
-          </Button>
-          <Button type="link" block href="https://www.pantforward.com/" target="_blank" >
-            <FontAwesomeIcon icon={faHome} />&nbsp;Homepage
           </Button>
         </div>
 
