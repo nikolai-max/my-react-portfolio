@@ -38,7 +38,7 @@ class Pantforward extends Component {
         <div>
           <h2>Pant Forward</h2>
           <Button type="link" block onClick={this.showModal}>
-            <VideoCameraOutlined />Video of Pant Forward
+            <VideoCameraOutlined />Pant Forward
           </Button>
           <img src={pantforward} className="container-image" alt="A mobile with the 'pantforward' application interface" />
           <p>Pant Forward was part of my 10 days Le Wagon final project together with my partner, Dennis Neely.</p>

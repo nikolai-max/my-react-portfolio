@@ -38,7 +38,7 @@ class Getatractor extends Component {
         <div>
           <h2>Get a tractor - just get it!</h2>
           <Button type="link" block onClick={this.showModal}>
-            <VideoCameraOutlined />Video of Get a tractor
+            <VideoCameraOutlined />Get a tractor
           </Button>
           <img src={getatractor} className="container-image" alt="A mobile with the 'Get a tractor' application interface" />
 
