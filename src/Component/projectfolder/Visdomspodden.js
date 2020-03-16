@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import Iframe from 'react-iframe'
+import { faPodcast } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Button } from 'antd';
 
 import './projects.css'
 
@@ -8,7 +11,9 @@ class Visdomspodden extends Component {
     return (
       <div>
         <h2>Visdomspodden</h2>
-        <p>Jeg har alltid vært nysgjerrig på de store spørsmålene i livet. Hva er et godt liv? Hvem er jeg blant tanker, følelser og drifter? Hva kan jeg gjøre for å få det bedre? I Visdomspodden forsøker jeg å få svar gjennom å oppsøke og prate med kloke mennesker som har stilt de samme spørsmålene.</p>
+        <p>I have always been curius about the big questions in life.
+        What is a good life? Who am I between thoughts, feelings and urges? How can we live better?
+        I try to get answers to these questions through thie podcast, inviting wise minds and experts to answer.</p>
         <Iframe url="//html5-player.libsyn.com/embed/episode/id/7544870/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/"
         width="100%"
         height="90"
@@ -19,6 +24,10 @@ class Visdomspodden extends Component {
         oallowfullscreen
         msallowfullscreen
         />
+        <p>NB! Episodes are in Norwegian</p>
+        <Button type="link" block href="https://www.pantforward.com/" target="_blank" >
+          <FontAwesomeIcon icon={faPodcast} />&nbsp;All episodes
+        </Button>
       </div>
     );
   }

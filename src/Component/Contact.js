@@ -13,9 +13,9 @@ class Contact extends Component {
         <p>The easiest way is to send me an personal message on my LinkedIn account.
         You´ll find the link by clicking the LinkedIn icon below.
         </p>
-        <div class="card-white">
+        <div className="card-white">
           <h2>Follow me</h2>
-          <ul class="list-inline">
+          <ul className="list-inline">
             <li>
               <a href="https://www.linkedin.com/in/nikolaitoverud/" rel='noreferrer noopener' target="_blank">
                 <FontAwesomeIcon icon={faLinkedin} />

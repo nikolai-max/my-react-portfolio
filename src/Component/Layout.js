@@ -3,7 +3,6 @@ import './layout.css';
 import profile from '../images/profile.jpg';
 import About from "./About";
 import Contact from "./Contact";
-import Projects from "./Projects";
 import Pantforward from "./projectfolder/Pantforward";
 import Getatractor from "./projectfolder/Getatractor";
 import Visdomspodden from "./projectfolder/Visdomspodden";
@@ -19,7 +18,7 @@ import { Avatar } from 'antd';
 import {
   Route,
   NavLink,
-  HashRouter
+  HashRouter,
 } from "react-router-dom";
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -70,7 +69,7 @@ class LayoutFrame extends React.Component {
           <Content style={{ margin: '0 16px' }}>
             <Breadcrumb style={{ margin: '16px 0' }}>
               <Breadcrumb.Item>Nikolai</Breadcrumb.Item>
-              <Breadcrumb.Item>Blabla</Breadcrumb.Item>
+              <Breadcrumb.Item></Breadcrumb.Item>
             </Breadcrumb>
             <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
               <Route exact path="/" component={About}/>

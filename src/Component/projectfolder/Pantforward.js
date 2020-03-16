@@ -2,9 +2,13 @@ import React, { Component } from "react";
 import pantforward from '../../images/pantforward.png';
 import pantlogo from '../../images/pantlogo.png';
 import Pantforwardmob from '../../images/Pantforwardmob.mp4';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faHome } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './projects.css'
-import { Modal } from 'antd';
+import { Modal, Button } from 'antd';
+import { VideoCameraOutlined } from '@ant-design/icons';
 import ReactPlayer from 'react-player'
 
 class Pantforward extends Component {
@@ -33,13 +37,23 @@ class Pantforward extends Component {
     return (
       <div>
         <div>
-          <img src={pantlogo} className="logo-adjustments" alt="Get a tractor logo" />
-          <h2>THIS IS PANT FORWARD BABY</h2>
+          <h2>Pant Forward</h2>
+          <Button type="link" block onClick={this.showModal}>
+            <VideoCameraOutlined />Video of Pant Forward
+          </Button>
+          <img src={pantforward} className="container-image" alt="A mobile with the 'pantforward' application interface" />
           <p>Pant Forward was part of my 10 days Le Wagon final project together with my partner, Dennis Neely.</p>
-          <p>The application is made for making it easier to recycle bottles in Norway.</p>
-
-          <p>Click on the mobile to open a video of the app.</p>
-          <img src={pantforward} className="container-image" onClick={this.showModal} alt="A mobile with the 'pantforward' application interface" />
+          <p>The purpose of the application is to make it easier to recycle bottles in Norway.
+          The app connect people who want to throw bottles with people who want to earn some cash.
+          Due to our 'pant' system in Norway, any person will get money(by pant) back when delivering bottles back to the store,
+          thereby the person can earn a reward by pick up other peoples bottles.</p>
+          <img src={pantlogo} className="logo-adjustments" alt="Get a tractor logo" />
+          <Button type="link" block href="https://github.com/portlandnorway/PantForward" target="_blank" >
+            <FontAwesomeIcon icon={faGithub} />&nbsp;GitHub
+          </Button>
+          <Button type="link" block href="https://www.pantforward.com/" target="_blank" >
+            <FontAwesomeIcon icon={faHome} />&nbsp;Homepage
+          </Button>
         </div>
 
         <div>
