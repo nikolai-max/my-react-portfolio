@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import getatractor from '../../images/getatractor.png';
 import tractorlogo from '../../images/tractorlogo.png';
-import Pantforwardmob from '../../images/Pantforwardmob.mp4';
+import Getatractormob from '../../images/Getatractormob.mp4';
 import { VideoCameraOutlined } from '@ant-design/icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faHome } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './projects.css'
@@ -54,15 +53,16 @@ class Getatractor extends Component {
 
         <div>
           <Modal
-            title="Pant Forward demo video"
+            title="Get a tractor demo video"
             visible={this.state.visible}
             onOk={this.handleOk}
             onCancel={this.handleCancel}
           >
-          <ReactPlayer url={Pantforwardmob}
+          <ReactPlayer url={Getatractormob}
                   className="video"
                     width="100%"
                     height="100%"
+                    controls="true"
                   />
 
           </Modal>

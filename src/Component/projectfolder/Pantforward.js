@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import pantforward from '../../images/pantforward.png';
-import pantlogo from '../../images/pantlogo.png';
 import Pantforwardmob from '../../images/Pantforwardmob.mp4';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faHome } from '@fortawesome/free-solid-svg-icons'
@@ -66,7 +65,6 @@ class Pantforward extends Component {
                   className="video"
                     width="100%"
                     height="100%"
-                    loop="true"
                     controls="true"
                   />
 
