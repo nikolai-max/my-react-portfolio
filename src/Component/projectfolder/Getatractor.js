@@ -53,8 +53,6 @@ class Getatractor extends Component {
                   className="video"
                     width="100%"
                     height="100%"
-                    loop="true"
-                    controls="true"
                   />
 
           </Modal>

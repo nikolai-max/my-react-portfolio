@@ -55,7 +55,7 @@ class LayoutFrame extends React.Component {
               title={
                 <span>
                   <FireOutlined />
-                  <NavLink to="/projects">Projects</NavLink>
+                  Projects
                 </span>
               }
             >
@@ -70,12 +70,11 @@ class LayoutFrame extends React.Component {
           <Content style={{ margin: '0 16px' }}>
             <Breadcrumb style={{ margin: '16px 0' }}>
               <Breadcrumb.Item>Nikolai</Breadcrumb.Item>
-              <Breadcrumb.Item>Pathway through props?</Breadcrumb.Item>
+              <Breadcrumb.Item>Blabla</Breadcrumb.Item>
             </Breadcrumb>
             <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
               <Route exact path="/" component={About}/>
               <Route path="/contact" component={Contact}/>
-              <Route exact path="/projects" component={Projects}/>
               <Route path="/projects/pantforward" component={Pantforward}/>
               <Route path="/projects/getatractor" component={Getatractor}/>
               <Route path="/projects/visdomspodden" component={Visdomspodden}/>
