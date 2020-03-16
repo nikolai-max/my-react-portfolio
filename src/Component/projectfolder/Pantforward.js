@@ -47,7 +47,6 @@ class Pantforward extends Component {
           The app connect people who want to throw bottles with people who want to earn some cash.
           Due to our 'pant' system in Norway, any person will get money(by pant) back when delivering bottles back to the store,
           thereby the person can earn a reward by pick up other peoples bottles.</p>
-          <img src={pantlogo} className="logo-adjustments" alt="Get a tractor logo" />
           <Button type="link" block href="https://github.com/portlandnorway/PantForward" target="_blank" >
             <FontAwesomeIcon icon={faGithub} />&nbsp;GitHub
           </Button>
