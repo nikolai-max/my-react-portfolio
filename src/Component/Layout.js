@@ -14,11 +14,12 @@ import {
   PhoneOutlined,
   UserOutlined,
 } from '@ant-design/icons';
-import { Avatar } from 'antd';
+import { Avatar, Button, Result } from 'antd';
 import {
   Route,
   NavLink,
   HashRouter,
+  Switch
 } from "react-router-dom";
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -73,11 +74,14 @@ class LayoutFrame extends React.Component {
               <Breadcrumb.Item>Welcome to my portfolio</Breadcrumb.Item>
             </Breadcrumb>
             <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
-              <Route exact path="/" component={About}/>
-              <Route path="/contact" component={Contact}/>
-              <Route path="/projects/pantforward" component={Pantforward}/>
-              <Route path="/projects/getatractor" component={Getatractor}/>
-              <Route path="/projects/visdomspodden" component={Visdomspodden}/>
+              <Switch>
+                <Route exact path="/" component={About}/>
+                <Route exact path="/contact" component={Contact}/>
+                <Route exact path="/projects/pantforward" component={Pantforward}/>
+                <Route exact path="/projects/getatractor" component={Getatractor}/>
+                <Route exact path="/projects/visdomspodden" component={Visdomspodden}/>
+                <Route path="*"><NoMatch /></Route>
+              </Switch>
             </div>
           </Content>
           <Footer style={{ textAlign: 'center' }}>©2020 Created with React by Nikolai Toverud</Footer>
@@ -86,6 +90,19 @@ class LayoutFrame extends React.Component {
       </HashRouter>
     );
   }
+}
+
+function NoMatch() {
+  return (
+    <div>
+    <Result
+      status="404"
+      title="404"
+      subTitle="Sorry, the page you visited does not exist."
+      extra={<Button href="/" type="primary">Back Home</Button>}
+    />
+    </div>
+  );
 }
 
 export default LayoutFrame;
