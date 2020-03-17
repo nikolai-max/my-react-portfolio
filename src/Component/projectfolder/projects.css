@@ -10,7 +10,17 @@
   width: 40%;
 }
 
-.logo-adjustments {
+.logo-adjustments-mobile {
+  width: 40%;
+  margin-bottom: 20px;
+}
+
+.logo-adjustments-tablet {
   width: 30%;
+  margin-bottom: 20px;
+}
+
+.logo-adjustments-desktop {
+  width: 20%;
   margin-bottom: 20px;
 }
