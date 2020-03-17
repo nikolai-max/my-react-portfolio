@@ -1,15 +1,15 @@
 import React, { Component } from "react";
-import pantforward from '../../images/pantforward.png';
-import Pantforwardmob from '../../images/Pantforwardmob.mp4';
+import './projects.css'
+import { Modal, Button } from 'antd';
+import { VideoCameraOutlined } from '@ant-design/icons';
+import ReactPlayer from 'react-player'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useMediaQuery } from 'react-responsive'
 
-import './projects.css'
-import { Modal, Button } from 'antd';
-import { VideoCameraOutlined } from '@ant-design/icons';
-import ReactPlayer from 'react-player'
+import pantforward from '../../images/pantforward.png';
+import Pantforwardmob from '../../images/Pantforwardmob.mp4';
 
 const Desktop = ({ children }) => {
   const isDesktop = useMediaQuery({ minWidth: 992 })

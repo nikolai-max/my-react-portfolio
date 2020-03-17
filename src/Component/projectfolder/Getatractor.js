@@ -1,16 +1,15 @@
 import React, { Component } from "react";
-import getatractor from '../../images/getatractor.png';
-import tractorlogo from '../../images/tractorlogo.png';
-import Getatractormob from '../../images/Getatractormob.mp4';
-import { VideoCameraOutlined } from '@ant-design/icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useMediaQuery } from 'react-responsive'
-
 import './projects.css'
 import { Modal, Button } from 'antd';
 import ReactPlayer from 'react-player'
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { useMediaQuery } from 'react-responsive'
+import { VideoCameraOutlined } from '@ant-design/icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import getatractor from '../../images/getatractor.png';
+import tractorlogo from '../../images/tractorlogo.png';
+import Getatractormob from '../../images/Getatractormob.mp4';
 
 const Desktop = ({ children }) => {
   const isDesktop = useMediaQuery({ minWidth: 992 })
