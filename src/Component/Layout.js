@@ -80,7 +80,7 @@ class LayoutFrame extends React.Component {
               <Route path="/projects/visdomspodden" component={Visdomspodden}/>
             </div>
           </Content>
-          <Footer style={{ textAlign: 'center' }}>©2020 Created by Nikolai Toverud</Footer>
+          <Footer style={{ textAlign: 'center' }}>©2020 Created with React by Nikolai Toverud</Footer>
         </Layout>
       </Layout>
       </HashRouter>
