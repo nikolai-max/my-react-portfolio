@@ -1,5 +1,13 @@
-.container-image {
+.container-image-mobile {
   width: 100%;
+}
+
+.container-image-tablet {
+  width: 50%;
+}
+
+.container-image-desktop {
+  width: 40%;
 }
 
 .logo-adjustments {

@@ -5,10 +5,25 @@ import Getatractormob from '../../images/Getatractormob.mp4';
 import { VideoCameraOutlined } from '@ant-design/icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useMediaQuery } from 'react-responsive'
 
 import './projects.css'
 import { Modal, Button } from 'antd';
 import ReactPlayer from 'react-player'
+
+
+const Desktop = ({ children }) => {
+  const isDesktop = useMediaQuery({ minWidth: 992 })
+  return isDesktop ? children : null
+}
+const Tablet = ({ children }) => {
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 })
+  return isTablet ? children : null
+}
+const Mobile = ({ children }) => {
+  const isMobile = useMediaQuery({ maxWidth: 767 })
+  return isMobile ? children : null
+}
 
 class Getatractor extends Component {
   state = { visible: false };
@@ -32,6 +47,7 @@ class Getatractor extends Component {
       visible: false,
     });
   };
+
   render() {
     return (
       <div>
@@ -40,7 +56,9 @@ class Getatractor extends Component {
           <Button type="link" block onClick={this.showModal}>
             <VideoCameraOutlined />Get a tractor
           </Button>
-          <img src={getatractor} className="container-image" alt="A mobile with the 'Get a tractor' application interface" />
+          <Mobile><img src={getatractor} className="container-image-mobile" alt="A mobile with the 'Get a tractor' application interface" /></Mobile>
+          <Tablet><img src={getatractor} className="container-image-tablet" alt="A mobile with the 'Get a tractor' application interface" /></Tablet>
+          <Desktop><img src={getatractor} className="container-image-desktop" alt="A mobile with the 'Get a tractor' application interface" /></Desktop>
 
           <p>Get a tractor was part of my 5 days 'markedplace' week in the Le Wagon code bootcamp. The ass is made with love together with my partner, Dennis Neely.</p>
           <p>Norway is full of unused tractors, and Get a tractor get them used by being the worlds first markedplace for swapping tractors.

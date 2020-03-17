@@ -4,11 +4,25 @@ import Pantforwardmob from '../../images/Pantforwardmob.mp4';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useMediaQuery } from 'react-responsive'
 
 import './projects.css'
 import { Modal, Button } from 'antd';
 import { VideoCameraOutlined } from '@ant-design/icons';
 import ReactPlayer from 'react-player'
+
+const Desktop = ({ children }) => {
+  const isDesktop = useMediaQuery({ minWidth: 992 })
+  return isDesktop ? children : null
+}
+const Tablet = ({ children }) => {
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 })
+  return isTablet ? children : null
+}
+const Mobile = ({ children }) => {
+  const isMobile = useMediaQuery({ maxWidth: 767 })
+  return isMobile ? children : null
+}
 
 class Pantforward extends Component {
   state = { visible: false };
@@ -40,7 +54,9 @@ class Pantforward extends Component {
           <Button type="link" block onClick={this.showModal}>
             <VideoCameraOutlined />Pant Forward
           </Button>
-          <img src={pantforward} className="container-image" alt="A mobile with the 'pantforward' application interface" />
+          <Mobile><img src={pantforward} className="container-image-mobile" alt="A mobile with the 'pantforward' application interface" /></Mobile>
+          <Tablet><img src={pantforward} className="container-image-tablet" alt="A mobile with the 'pantforward' application interface" /></Tablet>
+          <Desktop><img src={pantforward} className="container-image-desktop" alt="A mobile with the 'pantforward' application interface" /></Desktop>
           <p>Pant Forward was part of my 10 days Le Wagon final project together with my partner, Dennis Neely.</p>
           <p>The purpose of the application is to make it easier to recycle bottles in Norway.
           The app connect people who want to throw bottles with people who want to earn some cash.
