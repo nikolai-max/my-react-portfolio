@@ -58,10 +58,7 @@ class Pantforward extends Component {
           <Tablet><img src={pantforward} className="container-image-tablet" alt="A mobile with the 'pantforward' application interface" /></Tablet>
           <Desktop><img src={pantforward} className="container-image-desktop" alt="A mobile with the 'pantforward' application interface" /></Desktop>
           <p>Pant Forward was part of my 10 days Le Wagon final project together with my partner, Dennis Neely.</p>
-          <p>The purpose of the application is to make it easier to recycle bottles in Norway.
-          The app connect people who want to throw bottles with people who want to earn some cash.
-          Due to our 'pant' system in Norway, any person will get money(by pant) back when delivering bottles back to the store,
-          thereby the person can earn a reward by pick up other peoples bottles.</p>
+          <p>The purpose of the application is to make it easier to recycle bottles in Norway. The app connects people who want to throw bottles with people who want to earn some cash. Due to our 'pant' system in Norway, any person will get money(by pant) back when delivering bottles back to the store, thereby the person can earn a reward by pick up other people's bottles.</p>
           <Button type="link" block href="https://github.com/portlandnorway/PantForward" target="_blank" >
             <FontAwesomeIcon icon={faGithub} />&nbsp;GitHub
           </Button>

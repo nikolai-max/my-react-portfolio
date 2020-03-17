@@ -3,11 +3,11 @@
 }
 
 .container-image-tablet {
-  width: 50%;
+  width: 40%;
 }
 
 .container-image-desktop {
-  width: 40%;
+  width: 30%;
 }
 
 .logo-adjustments-mobile {
@@ -16,11 +16,11 @@
 }
 
 .logo-adjustments-tablet {
-  width: 30%;
+  width: 20%;
   margin-bottom: 20px;
 }
 
 .logo-adjustments-desktop {
   width: 20%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }

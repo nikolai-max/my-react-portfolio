@@ -10,8 +10,7 @@ class Contact extends Component {
     return (
       <div>
         <h2>Get in touch</h2>
-        <p>The easiest way is to send me an personal message on my LinkedIn account.
-        You´ll find the link by clicking the LinkedIn icon below.
+        <p>The easiest way to get in contact is to send me a personal message to my LinkedIn profile. You´ll find the link by clicking the LinkedIn icon below.
         </p>
         <div className="card-white">
           <h2>Follow me</h2>

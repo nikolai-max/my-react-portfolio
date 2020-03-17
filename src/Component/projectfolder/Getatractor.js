@@ -59,9 +59,8 @@ class Getatractor extends Component {
           <Tablet><img src={getatractor} className="container-image-tablet" alt="A mobile with the 'Get a tractor' application interface" /></Tablet>
           <Desktop><img src={getatractor} className="container-image-desktop" alt="A mobile with the 'Get a tractor' application interface" /></Desktop>
 
-          <p>Norway is full of unused tractors, and Get a tractor get them used by being the worlds first markedplace for swapping tractors.
-          Through the app, you can hire out our tractor, or you can instantly hire a tractor.</p>
-          <p>Get a tractor was part of my 5 days 'markedplace' week in the Le Wagon code bootcamp. The ass is made with love together with my partner, Dennis Neely.</p>
+          <p>Norway is full of unused tractors, and Get a tractor to get them used by being the world's first marketplace for swapping tractors. Through the app, you can hire out our tractor, or you can instantly hire a tractor.</p>
+          <p>Get a tractor was part of my 5 days 'marketplace' week in the Le Wagon code Bootcamp. The ass is made with love together with my partner, Dennis Neely.</p>
 
           <Mobile><img src={tractorlogo} className="logo-adjustments-mobile" alt="A mobile with the 'Get a tractor' application interface" /></Mobile>
           <Tablet><img src={tractorlogo} className="logo-adjustments-tablet" alt="A mobile with the 'Get a tractor' application interface" /></Tablet>
