@@ -6,7 +6,6 @@ import Contact from "./Contact";
 import Pantforward from "./projectfolder/Pantforward";
 import Getatractor from "./projectfolder/Getatractor";
 import Visdomspodden from "./projectfolder/Visdomspodden";
-import MetaTags from 'react-meta-tags';
 
 import 'antd/dist/antd.css';
 import { Layout, Menu, Breadcrumb } from 'antd';
@@ -40,12 +39,6 @@ class LayoutFrame extends React.Component {
   render() {
     return (
       <HashRouter>
-      <MetaTags>
-        <title>Welcome to Nikolais portfolio</title>
-        <meta name="description" content="This site is build in React! Here you´ll find my projects, and get to know me better" />
-        <meta property="og:title" content="Nikolais portfolio" />
-        <meta property="og:image" content="../images/demoday.png" />
-      </MetaTags>
       <Layout style={{ minHeight: '100vh' }}>
         <Sider collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}>
           <Avatar size="large" className="logo" src={profile} />
