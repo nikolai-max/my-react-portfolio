@@ -24,3 +24,12 @@
   width: 20%;
   margin-bottom: 10px;
 }
+
+.custom-link {
+  color: #1890ff;
+}
+
+.custom-link:hover {
+  color: #44a8ff;
+  cursor: pointer;
+}

@@ -51,9 +51,7 @@ class Pantforward extends Component {
       <div>
         <div>
           <h2>Pant Forward</h2>
-          <Button type="link" block onClick={this.showModal}>
-            <VideoCameraOutlined />Pant Forward
-          </Button>
+          <div onClick={this.showModal} class="custom-link"><VideoCameraOutlined /> Video: Pant Forward</div>
           <Mobile><img src={pantforward} className="container-image-mobile" alt="A mobile with the 'pantforward' application interface" /></Mobile>
           <Tablet><img src={pantforward} className="container-image-tablet" alt="A mobile with the 'pantforward' application interface" /></Tablet>
           <Desktop><img src={pantforward} className="container-image-desktop" alt="A mobile with the 'pantforward' application interface" /></Desktop>

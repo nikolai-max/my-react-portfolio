@@ -6,6 +6,7 @@ import Contact from "./Contact";
 import Pantforward from "./projectfolder/Pantforward";
 import Getatractor from "./projectfolder/Getatractor";
 import Visdomspodden from "./projectfolder/Visdomspodden";
+import WordGame from "./projectfolder/Wordgame";
 
 import 'antd/dist/antd.css';
 import { Layout, Menu, Breadcrumb } from 'antd';
@@ -63,7 +64,8 @@ class LayoutFrame extends React.Component {
             >
               <Menu.Item key="3"><NavLink to="/projects/pantforward">Pant Forward</NavLink></Menu.Item>
               <Menu.Item key="4"><NavLink to="/projects/getatractor">Get a tractor</NavLink></Menu.Item>
-              <Menu.Item key="5"><NavLink to="/projects/visdomspodden">Visdomspodden</NavLink></Menu.Item>
+              <Menu.Item key="5"><NavLink to="/projects/wordgame">Word Game</NavLink></Menu.Item>
+              <Menu.Item key="6"><NavLink to="/projects/visdomspodden">Visdomspodden</NavLink></Menu.Item>
             </SubMenu>
           </Menu>
         </Sider>
@@ -79,6 +81,7 @@ class LayoutFrame extends React.Component {
                 <Route exact path="/contact" component={Contact}/>
                 <Route exact path="/projects/pantforward" component={Pantforward}/>
                 <Route exact path="/projects/getatractor" component={Getatractor}/>
+                <Route exact path="/projects/WordGame" component={WordGame}/>
                 <Route exact path="/projects/visdomspodden" component={Visdomspodden}/>
                 <Route path="*"><NoMatch /></Route>
               </Switch>
