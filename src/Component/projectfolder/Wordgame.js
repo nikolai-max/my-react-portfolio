@@ -5,9 +5,23 @@ import { VideoCameraOutlined } from '@ant-design/icons';
 import ReactPlayer from 'react-player'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useMediaQuery } from 'react-responsive'
 
 import Wordgame from '../../images/wordgame.png';
-import Pantforwardmob from '../../images/Pantforwardmob.mp4';
+import wordgamemov from '../../images/wordgamemov.mp4';
+
+const Desktop = ({ children }) => {
+  const isDesktop = useMediaQuery({ minWidth: 992 })
+  return isDesktop ? children : null
+}
+const Tablet = ({ children }) => {
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 })
+  return isTablet ? children : null
+}
+const Mobile = ({ children }) => {
+  const isMobile = useMediaQuery({ maxWidth: 767 })
+  return isMobile ? children : null
+}
 
 class WordGame extends Component {
   state = { visible: false };
@@ -37,7 +51,9 @@ class WordGame extends Component {
         <div>
           <h2>Longest word game</h2>
           <div onClick={this.showModal} class="custom-link"><VideoCameraOutlined /> Video: Word Game</div>
-          <img src={Wordgame} className="container-image-mobile" alt="A mobile with the 'pantforward' application interface" />
+          <Mobile><img src={Wordgame} className="container-image-mobile" alt="A mobile with the 'Wordgame' application interface" /></Mobile>
+          <Tablet><img src={Wordgame} className="container-image-tablet" alt="A mobile with the 'Wordgame' application interface" /></Tablet>
+          <Desktop><img src={Wordgame} className="container-image-tablet" alt="A mobile with the 'Wordgame' application interface" /></Desktop>
           <p>The game was part of the full-stack challenges on the Le Wagon Bootcamp.</p>
           <p>The game is simple, you´ll get a random set of words in front of you. Find the longest possible word out of the set of words you are given in the shortest amount of time. The word will be check through a dictionary API. As soon as you submit your word, you will get your score based on length and time.</p>
           <Button type="link" block href="https://github.com/nikolai-max/rails-longest-word-game" target="_blank" >
@@ -47,12 +63,12 @@ class WordGame extends Component {
 
         <div>
           <Modal
-            title="Pant Forward demo video"
+            title="Word game demo video"
             visible={this.state.visible}
             onOk={this.handleOk}
             onCancel={this.handleCancel}
           >
-          <ReactPlayer url={Pantforwardmob}
+          <ReactPlayer url={wordgamemov}
                   className="video"
                     width="100%"
                     height="100%"
