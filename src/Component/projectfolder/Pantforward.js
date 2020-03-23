@@ -52,9 +52,9 @@ class Pantforward extends Component {
         <div>
           <h2>Pant Forward</h2>
           <div onClick={this.showModal} class="custom-link"><VideoCameraOutlined /> Video: Pant Forward</div>
-          <Mobile><img src={pantforward} className="container-image-mobile" alt="A mobile with the 'pantforward' application interface" /></Mobile>
-          <Tablet><img src={pantforward} className="container-image-tablet" alt="A mobile with the 'pantforward' application interface" /></Tablet>
-          <Desktop><img src={pantforward} className="container-image-desktop" alt="A mobile with the 'pantforward' application interface" /></Desktop>
+          <Mobile><img src={pantforward} onClick={this.showModal} className="container-image-mobile pointer" alt="A mobile with the 'pantforward' application interface" /></Mobile>
+          <Tablet><img src={pantforward} onClick={this.showModal} className="container-image-tablet pointer" alt="A mobile with the 'pantforward' application interface" /></Tablet>
+          <Desktop><img src={pantforward} onClick={this.showModal} className="container-image-desktop pointer" alt="A mobile with the 'pantforward' application interface" /></Desktop>
 
         <Mobile><div>
           <p>Pant Forward was part of my 10 days Le Wagon final project together with my partner, Dennis Neely.</p>

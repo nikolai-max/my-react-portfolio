@@ -53,9 +53,9 @@ class Getatractor extends Component {
         <div>
           <h2>Get a tractor - just get it!</h2>
           <div onClick={this.showModal} class="custom-link"><VideoCameraOutlined /> Video: Get a tractor</div>
-          <Mobile><img src={getatractor} className="container-image-mobile" alt="A mobile with the 'Get a tractor' application interface" /></Mobile>
-          <Tablet><img src={getatractor} className="container-image-tablet" alt="A mobile with the 'Get a tractor' application interface" /></Tablet>
-          <Desktop><img src={getatractor} className="container-image-desktop" alt="A mobile with the 'Get a tractor' application interface" /></Desktop>
+          <Mobile><img src={getatractor} onClick={this.showModal} className="container-image-mobile pointer" alt="A mobile with the 'Get a tractor' application interface" /></Mobile>
+          <Tablet><img src={getatractor} onClick={this.showModal} className="container-image-tablet pointer" alt="A mobile with the 'Get a tractor' application interface" /></Tablet>
+          <Desktop><img src={getatractor} onClick={this.showModal} className="container-image-desktop pointer" alt="A mobile with the 'Get a tractor' application interface" /></Desktop>
 
           <Mobile>
             <div>

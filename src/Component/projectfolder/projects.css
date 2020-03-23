@@ -1,13 +1,16 @@
 .container-image-mobile {
   width: 100%;
+  margin: 1em 0;
 }
 
 .container-image-tablet {
   width: 40%;
+  margin: 1em 0;
 }
 
 .container-image-desktop {
   width: 30%;
+  margin: 1em 0;
 }
 
 .logo-adjustments-mobile {
@@ -44,4 +47,8 @@ img.container-image-mobile.img-margin {
 
 .container-p-tablet {
   margin: 1em 5em;
+}
+
+.pointer {
+  cursor: pointer;  
 }
