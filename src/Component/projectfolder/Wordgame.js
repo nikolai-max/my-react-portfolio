@@ -50,7 +50,7 @@ class WordGame extends Component {
       <div>
         <div>
           <h2>Longest word game</h2>
-          <div onClick={this.showModal} class="custom-link"><VideoCameraOutlined /> Video: Word Game</div>
+          <div onClick={this.showModal} className="custom-link"><VideoCameraOutlined /> Video: Word Game</div>
           <Mobile><img src={Wordgame} onClick={this.showModal} className="container-image-mobile img-margin pointer" alt="A mobile with the 'Wordgame' application interface" /></Mobile>
           <Tablet><img src={Wordgame} onClick={this.showModal} className="container-image-tablet img-margin pointer" alt="A mobile with the 'Wordgame' application interface" /></Tablet>
           <Desktop><img src={Wordgame} onClick={this.showModal}  className="container-image-tablet img-margin pointer" alt="A mobile with the 'Wordgame' application interface" /></Desktop>
