@@ -21,7 +21,7 @@ class About extends Component {
   render() {
     return (
       <div>
-        <h2>Nikolai André Toverud - jr frontend developer</h2>
+        <h2>Junior frontend developer with business background</h2>
         <Mobile><div>
           <p>Since I started to work with technology, I have always wanted to learn to program. After two and a half years in one of Norway's most successful tech startups, I decided to follow my urge. I completed the highly renowned ‘Le Wagon’ Bootcamp In march 2020 and are now looking for jobs as a junior frontend developer.</p>
           <p>I'm a tech geek that loves to take projects and solutions that cover real needs out in the market. I have many years of experience with marketing and business development, with good results. I like to be ‘hands-on’ and have an including management style based on my experience from the officer school in the military.</p>

@@ -36,8 +36,6 @@ class LayoutFrame extends React.Component {
     this.setState({ collapsed });
   };
 
-
-
   render() {
     return (
       <HashRouter>
@@ -73,7 +71,7 @@ class LayoutFrame extends React.Component {
           <Header className="site-layout-background" style={{ padding: 0 }} />
           <Content style={{ margin: '0 16px' }}>
             <Breadcrumb style={{ margin: '16px 0' }}>
-              <Breadcrumb.Item>Welcome to my portfolio</Breadcrumb.Item>
+              <Breadcrumb.Item>Welcome to Nikolais portfolio site</Breadcrumb.Item>
             </Breadcrumb>
             <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
               <Switch>
