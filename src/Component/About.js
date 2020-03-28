@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { useMediaQuery } from 'react-responsive'
 
-import Demoday2 from '../images/demoday2.png';
+import Demoday from '../images/demoday.jpeg';
 import './About.css'
 
 const Desktop = ({ children }) => {
@@ -23,8 +23,8 @@ class About extends Component {
       <div>
         <h2>Junior frontend developer with business background</h2>
         <Mobile><div>
-          <p>Since I started to work with technology, I have always wanted to learn to program. After two and a half years in one of Norway's most successful tech startups, I decided to follow my urge. I completed the highly renowned ‘Le Wagon’ Bootcamp In march 2020 and are now looking for jobs as a junior frontend developer.</p>
-          <p>I'm a tech geek that loves to take projects and solutions that cover real needs out in the market. I have many years of experience with marketing and business development, with good results. I like to be ‘hands-on’ and have an including management style based on my experience from the officer school in the military.</p>
+          <p>Since I started to work with technology, I have always wanted to learn to program. After two and a half years in one of Norway's most successful tech startups, I decided to follow my urge. I completed the highly renowned ‘Le Wagon’ Bootcamp In march 2020 and am now open for jobs as a junior frontend developer.</p>
+          <p>I'm a tech geek that loves to take projects and solutions that cover real needs out in the market. I have many years of experience with marketing and business development, with good results. I like to be ‘hands-on’ and have an inclusive management style based on my experience in the officer school in the military.</p>
         </div></Mobile>
 
         <Tablet><div className="container-p-tablet">
@@ -36,9 +36,9 @@ class About extends Component {
           <p>Since I started to work with technology, I have always wanted to learn to program. After two and a half years in one of Norway's most successful tech startups, I decided to follow my urge. I completed the highly renowned ‘Le Wagon’ Bootcamp In march 2020 and are now looking for jobs as a junior frontend developer.</p>
           <p>I'm a tech geek that loves to take projects and solutions that cover real needs out in the market. I have many years of experience with marketing and business development, with good results. I like to be ‘hands-on’ and have an including management style based on my experience from the officer school in the military.</p>
         </div></Desktop>
-        <Mobile><img src={Demoday2} className="container-demoday-mobile" alt="Nikolai presenting his app on Le Wagons demoday" /></Mobile>
-        <Tablet><img src={Demoday2} className="container-demoday-tablet" alt="Nikolai presenting his app on Le Wagons demoday" /></Tablet>
-        <Desktop><img src={Demoday2} className="container-demoday-desktop" alt="Nikolai presenting his app on Le Wagons demoday" /></Desktop>
+        <Mobile><img src={Demoday} className="container-demoday-mobile" alt="Nikolai presenting his app on Le Wagons demoday" /></Mobile>
+        <Tablet><img src={Demoday} className="container-demoday-tablet" alt="Nikolai presenting his app on Le Wagons demoday" /></Tablet>
+        <Desktop><img src={Demoday} className="container-demoday-desktop" alt="Nikolai presenting his app on Le Wagons demoday" /></Desktop>
       </div>
     );
   }

@@ -5,7 +5,6 @@ import About from "./About";
 import Contact from "./Contact";
 import Pantforward from "./projectfolder/Pantforward";
 import Getatractor from "./projectfolder/Getatractor";
-import Visdomspodden from "./projectfolder/Visdomspodden";
 import WordGame from "./projectfolder/Wordgame";
 
 import 'antd/dist/antd.css';
@@ -63,7 +62,6 @@ class LayoutFrame extends React.Component {
               <Menu.Item key="3"><NavLink to="/projects/pantforward">Pant Forward</NavLink></Menu.Item>
               <Menu.Item key="4"><NavLink to="/projects/getatractor">Get a tractor</NavLink></Menu.Item>
               <Menu.Item key="5"><NavLink to="/projects/wordgame">Word Game</NavLink></Menu.Item>
-              <Menu.Item key="6"><NavLink to="/projects/visdomspodden">Visdomspodden</NavLink></Menu.Item>
             </SubMenu>
           </Menu>
         </Sider>
@@ -71,7 +69,7 @@ class LayoutFrame extends React.Component {
           <Header className="site-layout-background" style={{ padding: 0 }} />
           <Content style={{ margin: '0 16px' }}>
             <Breadcrumb style={{ margin: '16px 0' }}>
-              <Breadcrumb.Item>Welcome to Nikolais portfolio site</Breadcrumb.Item>
+              <Breadcrumb.Item>Welcome to Nikolai’s portfolio site</Breadcrumb.Item>
             </Breadcrumb>
             <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
               <Switch>
@@ -80,7 +78,6 @@ class LayoutFrame extends React.Component {
                 <Route exact path="/projects/pantforward" component={Pantforward}/>
                 <Route exact path="/projects/getatractor" component={Getatractor}/>
                 <Route exact path="/projects/WordGame" component={WordGame}/>
-                <Route exact path="/projects/visdomspodden" component={Visdomspodden}/>
                 <Route path="*"><NoMatch /></Route>
               </Switch>
             </div>
