@@ -49,16 +49,19 @@ class WordGame extends Component {
     return (
       <div>
         <div>
-          <h2>Longest word game</h2>
+          <h2 style={{paddingTop: "1em"}}>Longest word game</h2>
           <div onClick={this.showModal} className="custom-link"><VideoCameraOutlined /> Video: Word Game</div>
           <Mobile><img src={Wordgame} onClick={this.showModal} className="container-image-mobile img-margin pointer" alt="A mobile with the 'Wordgame' application interface" /></Mobile>
           <Tablet><img src={Wordgame} onClick={this.showModal} className="container-image-tablet img-margin pointer" alt="A mobile with the 'Wordgame' application interface" /></Tablet>
           <Desktop><img src={Wordgame} onClick={this.showModal}  className="container-image-tablet img-margin pointer" alt="A mobile with the 'Wordgame' application interface" /></Desktop>
 
           <Mobile>
-            <div>
+            <div className="container-p-mobile">
               <p>The game was part of the full-stack challenges on the Le Wagon Bootcamp.</p>
               <p>The game is simple, you´ll get a random set of words in front of you. Find the longest possible word out of the set of words you are given in the shortest amount of time. The word will be check through a dictionary API. As soon as you submit your word, you will get your score based on length and time.</p>
+              <Button type="link" block href="https://github.com/nikolai-max/rails-longest-word-game" target="_blank" >
+              <FontAwesomeIcon icon={faGithub} />&nbsp;GitHub
+            </Button>
             </div>
           </Mobile>
 
@@ -66,6 +69,9 @@ class WordGame extends Component {
             <div className="container-p-tablet">
               <p>The game was part of the full-stack challenges on the Le Wagon Bootcamp.</p>
               <p>The game is simple, you´ll get a random set of words in front of you. Find the longest possible word out of the set of words you are given in the shortest amount of time. The word will be check through a dictionary API. As soon as you submit your word, you will get your score based on length and time.</p>
+              <Button type="link" block href="https://github.com/nikolai-max/rails-longest-word-game" target="_blank" >
+              <FontAwesomeIcon icon={faGithub} />&nbsp;GitHub
+            </Button>
             </div>
           </Tablet>
         
@@ -73,12 +79,11 @@ class WordGame extends Component {
             <div className="container-p-desktop">
               <p>The game was part of the full-stack challenges on the Le Wagon Bootcamp.</p>
               <p>The game is simple, you´ll get a random set of words in front of you. Find the longest possible word out of the set of words you are given in the shortest amount of time. The word will be check through a dictionary API. As soon as you submit your word, you will get your score based on length and time.</p>
+              <Button type="link" block href="https://github.com/nikolai-max/rails-longest-word-game" target="_blank" >
+              <FontAwesomeIcon icon={faGithub} />&nbsp;GitHub
+            </Button>
             </div>
           </Desktop>
-  
-          <Button type="link" block href="https://github.com/nikolai-max/rails-longest-word-game" target="_blank" >
-            <FontAwesomeIcon icon={faGithub} />&nbsp;GitHub
-          </Button>
         </div>
 
         <div>

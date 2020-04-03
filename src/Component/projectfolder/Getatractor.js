@@ -51,23 +51,31 @@ class Getatractor extends Component {
     return (
       <div>
         <div>
-          <h2>Get a tractor - just get it!</h2>
+          <h2 style={{paddingTop: "1em"}}>Get a tractor - just get it!</h2>
           <div onClick={this.showModal} class="custom-link"><VideoCameraOutlined /> Video: Get a tractor</div>
           <Mobile><img src={getatractor} onClick={this.showModal} className="container-image-mobile pointer" alt="A mobile with the 'Get a tractor' application interface" /></Mobile>
           <Tablet><img src={getatractor} onClick={this.showModal} className="container-image-tablet pointer" alt="A mobile with the 'Get a tractor' application interface" /></Tablet>
           <Desktop><img src={getatractor} onClick={this.showModal} className="container-image-desktop pointer" alt="A mobile with the 'Get a tractor' application interface" /></Desktop>
 
           <Mobile>
-            <div>
+            <div className="container-p-mobile">
               <p>Norway is full of unused tractors. 'Get a tractor' get them used by being the world's first marketplace for swapping tractors. Through the app, you can hire out our tractor, or you can instantly hire a tractor.</p>
               <p>Get a tractor was part of my 5 days 'marketplace' week in the Le Wagon code Bootcamp. The app is made with love together with my partner, Dennis Neely.</p>
             </div>
+            <img src={tractorlogo} className="logo-adjustments-mobile" alt="A mobile with the 'Get a tractor' application interface" />
+            <Button type="link" block href="https://github.com/portlandnorway/airtractor" target="_blank" >
+            <FontAwesomeIcon icon={faGithub} />&nbsp;GitHub
+          </Button>
           </Mobile>
 
           <Tablet>
             <div className="container-p-tablet">
               <p>Norway is full of unused tractors. 'Get a tractor' get them used by being the world's first marketplace for swapping tractors. Through the app, you can hire out our tractor, or you can instantly hire a tractor.</p>
               <p>Get a tractor was part of my 5 days 'marketplace' week in the Le Wagon code Bootcamp. The app is made with love together with my partner, Dennis Neely.</p>
+              <img src={tractorlogo} className="logo-adjustments-tablet" alt="A mobile with the 'Get a tractor' application interface" />
+              <Button type="link" block href="https://github.com/portlandnorway/airtractor" target="_blank" >
+            <FontAwesomeIcon icon={faGithub} />&nbsp;GitHub
+          </Button>
             </div>
           </Tablet>
   
@@ -75,15 +83,12 @@ class Getatractor extends Component {
             <div className="container-p-desktop">
               <p>Norway is full of unused tractors. 'Get a tractor' get them used by being the world's first marketplace for swapping tractors. Through the app, you can hire out our tractor, or you can instantly hire a tractor.</p>
               <p>Get a tractor was part of my 5 days 'marketplace' week in the Le Wagon code Bootcamp. The app is made with love together with my partner, Dennis Neely.</p>
-            </div>
-          </Desktop>
-
-          <Mobile><img src={tractorlogo} className="logo-adjustments-mobile" alt="A mobile with the 'Get a tractor' application interface" /></Mobile>
-          <Tablet><img src={tractorlogo} className="logo-adjustments-tablet" alt="A mobile with the 'Get a tractor' application interface" /></Tablet>
-          <Desktop><img src={tractorlogo} className="logo-adjustments-desktop" alt="A mobile with the 'Get a tractor' application interface" /></Desktop>
-          <Button type="link" block href="https://github.com/portlandnorway/airtractor" target="_blank" >
+              <img src={tractorlogo} className="logo-adjustments-desktop" alt="A mobile with the 'Get a tractor' application interface" />
+              <Button type="link" block href="https://github.com/portlandnorway/airtractor" target="_blank" >
             <FontAwesomeIcon icon={faGithub} />&nbsp;GitHub
           </Button>
+            </div>
+          </Desktop>
         </div>
 
         <div>

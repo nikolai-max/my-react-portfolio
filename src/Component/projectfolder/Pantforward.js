@@ -50,33 +50,44 @@ class Pantforward extends Component {
     return (
       <div>
         <div>
-          <h2>Pant Forward</h2>
-          <div onClick={this.showModal} class="custom-link"><VideoCameraOutlined /> Video: Pant Forward</div>
+          <h2 style={{paddingTop: "1em"}}>Pant Forward</h2>
+          <div onClick={this.showModal} className="custom-link"><VideoCameraOutlined /> Video: Pant Forward</div>
           <Mobile><img src={pantforward} onClick={this.showModal} className="container-image-mobile pointer" alt="A mobile with the 'pantforward' application interface" /></Mobile>
           <Tablet><img src={pantforward} onClick={this.showModal} className="container-image-tablet pointer" alt="A mobile with the 'pantforward' application interface" /></Tablet>
           <Desktop><img src={pantforward} onClick={this.showModal} className="container-image-desktop pointer" alt="A mobile with the 'pantforward' application interface" /></Desktop>
 
-        <Mobile><div>
+        <Mobile><div className="container-p-mobile">
           <p>Pant Forward was part of my 10 days Le Wagon final project together with my partner, Dennis Neely.</p>
           <p>The purpose of the application is to make it easier to recycle bottles in Norway. The app connects people who want to throw bottles with people who want to earn some cash. Due to our 'pant' system in Norway, any person will get money(by pant) back when delivering bottles back to the store, thereby the person can earn a reward by pick up other people's bottles.</p>
-        </div></Mobile>
-
-        <Tablet><div className="container-p-tablet">
-          <p>Pant Forward was part of my 10 days Le Wagon final project together with my partner, Dennis Neely.</p>
-          <p>The purpose of the application is to make it easier to recycle bottles in Norway. The app connects people who want to throw bottles with people who want to earn some cash. Due to our 'pant' system in Norway, any person will get money(by pant) back when delivering bottles back to the store, thereby the person can earn a reward by pick up other people's bottles.</p> 
-        </div></Tablet>
-        
-        <Desktop><div className="container-p-desktop">
-          <p>Pant Forward was part of my 10 days Le Wagon final project together with my partner, Dennis Neely.</p>
-          <p>The purpose of the application is to make it easier to recycle bottles in Norway. The app connects people who want to throw bottles with people who want to earn some cash. Due to our 'pant' system in Norway, any person will get money(by pant) back when delivering bottles back to the store, thereby the person can earn a reward by pick up other people's bottles.</p>
-        </div></Desktop>
-        
           <Button type="link" block href="https://github.com/portlandnorway/PantForward" target="_blank" >
             <FontAwesomeIcon icon={faGithub} />&nbsp;GitHub
           </Button>
           <Button type="link" block href="https://www.pantforward.com/" target="_blank" >
             <FontAwesomeIcon icon={faHome} />&nbsp;Homepage
           </Button>
+        </div></Mobile>
+
+        <Tablet><div className="container-p-tablet">
+          <p>Pant Forward was part of my 10 days Le Wagon final project together with my partner, Dennis Neely.</p>
+          <p>The purpose of the application is to make it easier to recycle bottles in Norway. The app connects people who want to throw bottles with people who want to earn some cash. Due to our 'pant' system in Norway, any person will get money(by pant) back when delivering bottles back to the store, thereby the person can earn a reward by pick up other people's bottles.</p> 
+          <Button type="link" block href="https://github.com/portlandnorway/PantForward" target="_blank" >
+            <FontAwesomeIcon icon={faGithub} />&nbsp;GitHub
+          </Button>
+          <Button type="link" block href="https://www.pantforward.com/" target="_blank" >
+            <FontAwesomeIcon icon={faHome} />&nbsp;Homepage
+          </Button>
+        </div></Tablet>
+        
+        <Desktop><div className="container-p-desktop">
+          <p>Pant Forward was part of my 10 days Le Wagon final project together with my partner, Dennis Neely.</p>
+          <p>The purpose of the application is to make it easier to recycle bottles in Norway. The app connects people who want to throw bottles with people who want to earn some cash. Due to our 'pant' system in Norway, any person will get money(by pant) back when delivering bottles back to the store, thereby the person can earn a reward by pick up other people's bottles.</p>
+          <Button type="link" block href="https://github.com/portlandnorway/PantForward" target="_blank" >
+            <FontAwesomeIcon icon={faGithub} />&nbsp;GitHub
+          </Button>
+          <Button type="link" block href="https://www.pantforward.com/" target="_blank" >
+            <FontAwesomeIcon icon={faHome} />&nbsp;Homepage
+          </Button>
+        </div></Desktop>
         </div>
 
         <div>

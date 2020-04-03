@@ -8,7 +8,7 @@ import Getatractor from "./projectfolder/Getatractor";
 import WordGame from "./projectfolder/Wordgame";
 
 import 'antd/dist/antd.css';
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Menu } from 'antd';
 import {
   FireOutlined,
   PhoneOutlined,
@@ -22,7 +22,7 @@ import {
   Switch
 } from "react-router-dom";
 
-const { Header, Content, Footer, Sider } = Layout;
+const { Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 
 class LayoutFrame extends React.Component {
@@ -67,7 +67,7 @@ class LayoutFrame extends React.Component {
         </Sider>
         <Layout className="site-layout">
           <Content>
-            <div className="site-layout-background" style={{ minHeight: 360 }}>
+            <div className="site-layout-background" style={{minHeight: "100%"}}>
               <Switch>
                 <Route exact path="/" component={About}/>
                 <Route exact path="/contact" component={Contact}/>

@@ -42,17 +42,29 @@ img.container-image-mobile.img-margin {
 }
 
 .container-p-mobile {
-  margin: 1em 1em;
+  padding: 1em 1em;
 }
 
 .container-p-tablet {
-  margin: 1em 5em;
+  padding: 1em 5em;
 }
 
 .container-p-desktop {
-  margin: 1em 13em;
+  padding: 1em 10em;
 }
 
 .pointer {
   cursor: pointer;  
+}
+
+.container-p-mobile-about {
+  padding: 1em 1em;
+}
+
+.container-p-tablet-about {
+  padding: 3em 5em;
+}
+
+.container-p-desktop-about {
+  padding: 3em 10em;
 }

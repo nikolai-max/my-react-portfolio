@@ -1,8 +1,8 @@
 .container-demoday {
   width: 100%;
-  min-height: 32vh;
+  min-height: 40vh;
   max-height: 65vh;
   object-fit: cover;
-  margin: 0px 0px 20px 0;
+  object-position: 30% 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
