@@ -41,6 +41,10 @@ img.container-image-mobile.img-margin {
   margin: 20px 0;
 }
 
+.container-p-mobile {
+  margin: 1em 1em;
+}
+
 .container-p-tablet {
   margin: 1em 5em;
 }

@@ -66,12 +66,8 @@ class LayoutFrame extends React.Component {
           </Menu>
         </Sider>
         <Layout className="site-layout">
-          <Header className="site-layout-background" style={{ padding: 0 }} />
-          <Content style={{ margin: '0 16px' }}>
-            <Breadcrumb style={{ margin: '16px 0' }}>
-              <Breadcrumb.Item>Welcome to Nikolai’s portfolio site</Breadcrumb.Item>
-            </Breadcrumb>
-            <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
+          <Content>
+            <div className="site-layout-background" style={{ minHeight: 360 }}>
               <Switch>
                 <Route exact path="/" component={About}/>
                 <Route exact path="/contact" component={Contact}/>
